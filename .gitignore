@@ -1,0 +1,37 @@
+# DBT Target Folder
+target/
+
+# DBT Run Results
+dbt_modules/
+
+# Python Virtual Environment (if using virtualenv or venv)
+.venv/
+env/
+venv/
+
+# Python Bytecode files
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+
+# DBT Log Files
+logs/
+
+# DBT Artifacts (e.g., dbt run, dbt test, etc.)
+run_results.json
+manifest.json
+catalog.json
+sources.json
+
+# Ignore the DBT profiles.yml file if it contains sensitive information
+# This file typically contains connection credentials
+profiles.yml
+
+# Ignore any personal files, like the user's environment-specific configuration
+*.dbt
+
+# Ignore backup files (e.g., from editors like vim, emacs, etc.)
+*~
+*.swp
+*.swo

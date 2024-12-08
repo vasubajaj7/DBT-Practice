@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: bhagya
+    database: dbt_practice  
+    schema: dbt_practice  
+    tables:
+      - name: usa_sales
+      - name: orders
