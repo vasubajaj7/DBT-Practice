@@ -1,0 +1,16 @@
+version: 2
+
+models:
+  - name: dim_region_scd2
+    description: "SCD2 dimension for regions with historical tracking"
+  - name: fact_sales
+    description: "Fact table aggregating total sales by location"
+
+sources:
+  - name: stage
+    database: dbt_practice
+    schema: dbt_practice  # Replace 'public' with the actual schema name
+    tables:
+      - name: bhagya_data
+      - name: airline_data
+

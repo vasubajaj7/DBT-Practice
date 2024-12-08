@@ -1,0 +1,19 @@
+version: 2
+
+models:
+  - name: dim_region_scd1
+    description: "Description of your table"
+    tests:
+      - row_count_greater_than_zero:
+          columns:
+            - country
+      - no_duplicate_rows:
+          columns:
+            - country
+            - region
+            - state
+      - all_columns_not_null:
+          columns:
+            - country
+            - region
+            - state
